@@ -1,0 +1,16 @@
+{
+  "name": "python-trading-bot",
+  "version": "1.0.0",
+  "description": "wss://stream.binance.com:9443",
+  "main": "index.js",
+  "dependencies": {
+    "wscat": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

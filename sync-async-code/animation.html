@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div id="root" style="position: absolut; height: 1000px">
+    Animate me!
+</div>
+
+<script type="application/javascript">
+    const rectangle = document.querySelector("#root");
+
+    let leftPosition = 0;
+
+    function animateDiv () {
+        console.log(`Start animateDiv ${leftPosition}`);
+
+        leftPostion += 1;
+
+        rectangle.style.left = `${leftPostion}px`;
+
+        if (leftPosition < 200) {
+            console.log(`Before animateDiv`);
+            requestAnimationFrame(animateDiv);
+            console.log(`After animateDiv`);
+        }
+
+        console.log(`End animateDiv`)
+    }
+</script>
+</body>
+</html>
